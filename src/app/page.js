@@ -1,5 +1,5 @@
 
-import Header from "./components/header/header"
+import Header from "./components/Header/header"
 import DescriptionCard from "./components/Header/description/description"
 import Contact from "./components/contact/contact"
 

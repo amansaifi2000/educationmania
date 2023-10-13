@@ -1,19 +1,3 @@
-// import Image from "next/image";
-// import Profile from "../../../../public/images/Profile.jpeg";
-
-// // import "./style.css";
-// const Header = () => {
-//   return (
-//     <>
-//       <div className=" w-full h-80 bg-[url('/images/education.jpeg')]  bg-cover bg-center">  
-//         <Image src={Profile} alt="img" className="mx-auto relative top-[12rem] z-10 align-bottom justify-center rounded-full" />
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Header;
-
 import Image from "next/image";
 import Profile from "../../../../public/images/Profile.jpeg";
 
