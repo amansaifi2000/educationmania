@@ -1,5 +1,7 @@
+import React from "react";
 import Profile from "../../../../public/images/abstract.jpg";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobile, faEnvelope, faBuilding, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 const Contact = () => {
@@ -13,7 +15,7 @@ const Contact = () => {
     <>
       <div className="flex flex-wrap pt-5 mt-5 justify-center items-stretch">
 
-        {/*Contact Block */}
+        {/* Contact Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
             target="_blank"
@@ -89,4 +91,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
