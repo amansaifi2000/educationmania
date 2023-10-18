@@ -11,7 +11,7 @@ const Form = () => {
 
   return (
     <>
-      <div className="p-4 md:p-0 flex flex-col md:flex-row bg-white rounded-lg mt-5" style={{...backgroundStyle, position: "relative"}}>
+      <div className="p-4 md:p-0 flex flex-col md:flex-row bg-gradient-to-b from-rose-100 to-teal-100 rounded-lg mt-5" style={{...backgroundStyle, position: "relative"}}>
         <div className="w-full md:w-1/2">
           <div className="p-6 relative">
             <h2 className="text-xl text-black text-th-background font-semibold uppercase pl-2 border-l-4 border-th-background">Opening Hours</h2>
@@ -52,7 +52,7 @@ const Form = () => {
             type="text"
             name="fullName"
             id="fullName"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=""
             required
           />
@@ -69,7 +69,7 @@ const Form = () => {
             type="email"
             name="email"
             id="email"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
           />
@@ -87,7 +87,7 @@ const Form = () => {
             pattern="(?:\0)?[789]\d{9}"
             name="mobile"
             id="mobile"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=""
             required
           />
@@ -104,7 +104,7 @@ const Form = () => {
             type="text"
             name="message"
             id="message"
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
             required
           />
@@ -129,7 +129,7 @@ const Form = () => {
           </div>
           <label
             htmlFor="terms"
-            className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-400"
           >
             I agree with the{" "}
             <a
