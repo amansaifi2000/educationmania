@@ -6,7 +6,7 @@ import TwitterLogo from '../../../public/images/Logo/TwitterLogo.png';
 
 const SocialMediaLinks = () => {
   return (
-    <div className="flex items-center justify-center space-x-4 m-8">
+    <div className="flex items-center justify-center space-x-4 mt-4">
       <a href="https://www.facebook.com/vosovyapar" target="_blank" className="hover:opacity-80 transition">
         <Image
           alt="Facebook Logo"
