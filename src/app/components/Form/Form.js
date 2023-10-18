@@ -1,4 +1,5 @@
 import React from "react"; // Import React
+import Image from 'next/image';
 import abstract1 from "../../../../public/images/abstract1.jpg"
 
 

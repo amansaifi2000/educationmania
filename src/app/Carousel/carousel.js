@@ -38,7 +38,7 @@ const ProductCarousel = () => {
                 alt={product.name}
                 src={product.image}
                 width={236}
-                height={1}
+                height={236}
                 className="w-56 h-56 object-cover rounded-full mb-2"
               />
               <div className="mt-6">{product.name}</div>

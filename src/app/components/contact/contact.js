@@ -1,4 +1,5 @@
 import React from "react";
+// import Image from 'next/image';
 import Profile from "../../../../public/images/abstract.jpg";
 import PlaceIcon from "@mui/icons-material/Place";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
@@ -6,6 +7,10 @@ import EmailIcon from "@mui/icons-material/Email";
 import WorkIcon from "@mui/icons-material/Work";
 
 const Contact = () => {
+  const iconStyle = {
+    width: "100px", // Adjust the width to your desired size
+    height: "100px", // Adjust the height to your desired size
+  };
   const backgroundImageStyle = {
     backgroundImage: `url(${Profile.src})`,
     backgroundSize: "cover",
