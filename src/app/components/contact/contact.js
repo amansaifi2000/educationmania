@@ -1,8 +1,9 @@
 import React from "react";
 import Profile from "../../../../public/images/abstract.jpg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faEnvelope, faBuilding, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-
+import PlaceIcon from "@mui/icons-material/Place";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import EmailIcon from "@mui/icons-material/Email";
+import WorkIcon from "@mui/icons-material/Work";
 
 const Contact = () => {
   const backgroundImageStyle = {
@@ -13,17 +14,17 @@ const Contact = () => {
 
   return (
     <>
-      <div className="flex flex-wrap pt-5 mt-5 justify-center items-stretch">
-
-        {/* Contact Block */}
+      <div className="flex flex-wrap pt-10 mt-5 justify-center items-stretch">
+        {/* Mobile Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg"
-            style={{ ...backgroundImageStyle, position: "relative" }}>
-            <div className="flex justify-center items-center h-40 text-black">
-              <i className="fa fa-solid fa-mobile" style={{ fontSize: "80px" }}></i>
+            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
+            style={{ ...backgroundImageStyle, position: "relative", marginTop: "20px" }}
+          >
+            <div className="flex justify-center items-center h-40 text-black text-4xl">
+              <ContactPhoneIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
             <div className="mt-2 text-center flex-grow">
               <p className="text-lg font-bold text-black">Mobile</p>
@@ -37,11 +38,11 @@ const Contact = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg"
-            style={{ ...backgroundImageStyle, position: "relative" }}
+            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
+            style={{ ...backgroundImageStyle, position: "relative", marginTop: "20px" }}
           >
-            <div className="flex justify-center items-center h-40 text-black">
-            <i className="fa fa-solid fa-email" style={{ fontSize: "80px" }}></i>
+            <div className="flex justify-center items-center h-40 text-black text-4xl">
+              <EmailIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
             <div className="mt-2 text-center flex-grow">
               <p className="text-lg font-bold text-black">Email ID</p>
@@ -50,16 +51,16 @@ const Contact = () => {
           </a>
         </div>
 
-        {/* Business Block */}
+        {/* Business Segment Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg"
-            style={{ ...backgroundImageStyle, position: "relative" }}
+            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
+            style={{ ...backgroundImageStyle, position: "relative", marginTop: "20px" }}
           >
-             <div className="flex justify-center items-center h-40 text-black">
-            <i className="fa fa-solid fa-business" style={{ fontSize: "80px" }}></i>
+            <div className="flex justify-center items-center h-40 text-black text-4xl">
+              <WorkIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
             <div className="mt-2 text-center flex-grow">
               <p className="text-lg font-bold text-black">Business Segment</p>
@@ -73,11 +74,11 @@ const Contact = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg"
-            style={{ ...backgroundImageStyle, position: "relative" }}
+            className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
+            style={{ ...backgroundImageStyle, position: "relative", marginTop: "20px" }}
           >
-               <div className="flex justify-center items-center h-40 text-black">
-            <i className="fa fa-solid fa-location" style={{ fontSize: "80px" }}></i>
+            <div className="flex justify-center items-center h-40 text-black text-4xl">
+              <PlaceIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
             <div className="mt-2 text-center flex-grow ">
               <p className="text-lg font-bold text-black">Location</p>
