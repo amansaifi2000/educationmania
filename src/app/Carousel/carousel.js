@@ -29,7 +29,7 @@ const ProductCarousel = () => {
       <div className="w-full overflow-hidden relative mt-5 rounded-lg shadow-lg">
         <div className="carousel-root p-8 rounded-lg shadow-lg flex space-x-16 justify-center items-center">
           {visibleProducts.map((product, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center hover:scale-105">
               <img
                 alt={product.name}
                 src={product.image}
