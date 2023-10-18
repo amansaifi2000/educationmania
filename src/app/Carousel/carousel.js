@@ -1,5 +1,9 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import Image from 'next/image'
+
+
+
 
 const ProductCarousel = () => {
   const products = [
@@ -30,9 +34,11 @@ const ProductCarousel = () => {
         <div className="carousel-root p-8 rounded-lg shadow-lg flex space-x-16 justify-center items-center">
           {visibleProducts.map((product, index) => (
             <div key={index} className="text-center hover:scale-105">
-              <img
+              <Image
                 alt={product.name}
                 src={product.image}
+                width={236}
+                height={1}
                 className="w-56 h-56 object-cover rounded-full mb-2"
               />
               <div className="mt-6">{product.name}</div>
