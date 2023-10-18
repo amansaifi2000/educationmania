@@ -36,6 +36,7 @@ const Contact = () => {
         {/* Email Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=amanalisaifi2000@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
@@ -72,6 +73,7 @@ const Contact = () => {
         {/* Location Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
+          href="https://en.wikipedia.org/wiki/Uttarakhand"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
