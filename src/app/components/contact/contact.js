@@ -31,9 +31,9 @@ const Contact = () => {
             <div className="flex justify-center items-center h-40 text-black text-4xl">
               <ContactPhoneIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
-            <div className="mt-2 text-center flex-grow">
+            <div className="mt-2 text-center flex-grow font-serif">
               <p className="text-lg font-bold text-black">Mobile</p>
-              <p className="text-gray-700 mt-1 capitalize">8430188500</p>
+              <p className="text-gray-700 mt-1 capitalize">+91 90000-80000</p>
             </div>
           </a>
         </div>
@@ -41,7 +41,7 @@ const Contact = () => {
         {/* Email Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=amanalisaifi2000@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tim.jennings@example.com"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
@@ -50,9 +50,9 @@ const Contact = () => {
             <div className="flex justify-center items-center h-40 text-black text-4xl">
               <EmailIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
-            <div className="mt-2 text-center flex-grow">
+            <div className="mt-2 text-center flex-grow font-serif">
               <p className="text-lg font-bold text-black">Email ID</p>
-              <p className="text-gray-700 mt-1">amanalisaifi2000@gmail.com</p>
+              <p className="text-gray-700 mt-1">tim.jennings@example.com</p>
             </div>
           </a>
         </div>
@@ -68,9 +68,9 @@ const Contact = () => {
             <div className="flex justify-center items-center h-40 text-black text-4xl">
               <WorkIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
-            <div className="mt-2 text-center flex-grow">
+            <div className="mt-2 text-center flex-grow font-serif">
               <p className="text-lg font-bold text-black">Business Segment</p>
-              <p className="text-gray-700 mt-1">Education</p>
+              <p className="text-gray-700 mt-1">Make Up</p>
             </div>
           </a>
         </div>
@@ -78,7 +78,7 @@ const Contact = () => {
         {/* Location Block */}
         <div className="flex-grow max-w-xs mx-2 md:mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/6 cursor-pointer">
           <a
-          href="https://en.wikipedia.org/wiki/Uttarakhand"
+          href="https://en.wikipedia.org/wiki/Santa_Anna_Township,_DeWitt_County,_Illinois"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white flex p-2 my-2 flex-col h-full rounded-lg transition duration-300 transform hover:shadow-lg"
@@ -87,9 +87,9 @@ const Contact = () => {
             <div className="flex justify-center items-center h-40 text-black text-4xl">
               <PlaceIcon className="w-12 h-12 transition duration-300 transform hover:scale-110 mt-8" />
             </div>
-            <div className="mt-2 text-center flex-grow ">
+            <div className="mt-2 text-center flex-grow font-serif ">
               <p className="text-lg font-bold text-black">Location</p>
-              <p className="text-gray-700 mt-1">Uttrakhand</p>
+              <p className="text-gray-700 mt-1">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
             </div>
           </a>
         </div>
