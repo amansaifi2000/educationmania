@@ -6,7 +6,9 @@ import Contact from "./components/contact/contact"
 import Form from "./components/Form/Form"
 import Footer from "./components/Footer/Footer"
 import SocialMediaLinks from "./SocialMedia/social"
+import PhotosGallery from "./Gallery/gallery";
 import ProductCarousel from "./Carousel/carousel"
+import Gallery from "./Gallery/gallery";
 
 
 export default function Home() {
@@ -15,8 +17,9 @@ export default function Home() {
     <Header/>
     <DescriptionCard/>
     <Contact/>
-    <ProductCarousel/>
     <SocialMediaLinks/>
+    <ProductCarousel/>
+    <PhotosGallery/>
     <Form/>
     <Footer/>
    </div>

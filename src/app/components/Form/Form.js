@@ -1,22 +1,22 @@
 import React from "react"; // Import React
 import Image from 'next/image';
-import abstract1 from "../../../../public/images/abstract1.jpg"
+import abstract from "../../../../public/images/abstract.jpg"
 
 
 const Form = () => {
   const backgroundStyle = {
     position: "relative",
-    backgroundImage: `url(${abstract1})`,
+    backgroundImage: `url(${abstract})`,
     backgroundSize: "cover",
     backgroundPosition: "center center"
   };
 
   return (
     <>
-      <div className="p-4 md:p-0 flex flex-col md:flex-row bg-gradient-to-b from-rose-100 to-teal-100 rounded-lg mt-5" style={{...backgroundStyle, position: "relative"}}>
+      <div className="p-4 md:p-0 flex flex-col md:flex-row rounded-lg mt-5" style={{...backgroundStyle, position: "relative"}}>
         <div className="w-full md:w-1/2">
           <div className="p-6 relative">
-            <h2 className="text-xl text-black text-th-background font-semibold uppercase pl-2 border-l-4 border-th-background">Opening Hours</h2>
+            <h2 className="text-xl text-black text-th-background font-semibold uppercase pl-2 border-th-background flex items-center justify-center ">Opening Hours</h2>
             <ul className="list-none m-0 p-0 mt-4">
               <li className="text-gray-600 border-b border-gray-800 py-2 px-1">
                 <span>Sun</span><span className="float-right">Closed</span>
@@ -44,7 +44,7 @@ const Form = () => {
         </div>
         <div className="w-full md:w-1/2">
           <div className="p-6 relative">
-            <h2 className="text-xl text-black text-th-background font-semibold uppercase pl-2 border-l-4 border-th-background">Your Questions, Our Answers</h2>
+            <h2 className="text-xl text-black text-th-background font-semibold uppercase pl-2 border-th-background flex items-center justify-center">Your Questions, Our Answers</h2>
             
           
             <div className="pt-8">
@@ -146,7 +146,7 @@ const Form = () => {
 
         <button
           type="submit"
-          className="text-white bg-th-background hover:bg-th-primary focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 shadow"
+          className="text-white bg-th-background hover:bg-th-primary focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800 shadow conic-gradient"
         >
           Submit
         </button>

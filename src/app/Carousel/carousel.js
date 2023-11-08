@@ -1,47 +1,47 @@
-"use client"
-import React, { useState, useEffect } from "react";
 import Image from 'next/image';
+import React from 'react';
 
 const ProductCarousel = () => {
-  const products = [
-    { name: "Web Development", image: "/images/Web.jpeg" },
-    { name: "AI/ML Development", image: "/images/Ai.jpeg" },
-    { name: "Data Analytics", image: "/images/Data.jpeg" },
-    { name: "Mobile App Development", image: "/images/Mobile.jpeg" },
-    { name: "Cyber Security", image: "/images/Pl.jpeg" },
-    { name: "Blockchain Development", image: "/images/Block.jpeg" }
+  const imagesData = [
+    {
+      name: 'Lipsticks',
+      price: '$50',
+      src: '/images/Lipstick.png', // Replace with the actual path to your image
+    },
+    {
+      name: 'Liquid Lipsticks',
+      price: '$40',
+      src: '/images/Liquidlip.png', // Replace with the actual path to your image
+    },
+    {
+      name: 'Mascara',
+      price: '$70',
+      src: '/images/Mascara.png', // Replace with the actual path to your image
+    },
+    {
+      name: 'Nailpaint',
+      price: '$65',
+      src: '/images/Nailpaint.png', // Replace with the actual path to your image
+    },
   ];
 
-  const [startIndex, setStartIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStartIndex((prevIndex) => (prevIndex + 3) % products.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const visibleProducts = products.slice(startIndex, startIndex + 3);
-
   return (
-    <div className="max-w-screen-xl mx-auto mt-2 p-2 rounded-lg">
-      <h1 className="text-4xl font-bold mt-8 mb-6 text-center">Our Services</h1>
-      <div className="w-full overflow-hidden relative mt-5 rounded-lg shadow-lg">
-        <div className="carousel-root p-8 rounded-lg shadow-lg flex space-x-4 md:space-x-8 lg:space-x-16 justify-center items-center">
-          {visibleProducts.map((product, index) => (
-            <div key={index} className="text-center hover:scale-105">
-              <Image
-                alt={product.name}
-                src={product.image}
-                width={236}
-                height={236}
-                className="w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 object-cover rounded-full mb-2"
-              />
-              <div className="mt-6 text-sm md:text-base lg:text-lg">{product.name}</div>
-            </div>
-          ))}
-        </div>
+    <div className="text-center mt-8">
+      <h1 className="text-3xl font-bold mb-4 font-serif text-black">Our Products</h1>
+      <div className="flex items-center justify-center space-x-4 mt-10">
+        {imagesData.map((image, index) => (
+          <div key={index} className="relative text-center">
+            <Image 
+              src={image.src} 
+              alt={image.name} 
+              height={305}
+              width={350}
+              className="w-350 h-305 object-cover rounded-lg" 
+            />
+            <p className="mt-2 text-black font-semibold">{image.name}</p>
+            <p className="text-gray-500">{image.price}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
